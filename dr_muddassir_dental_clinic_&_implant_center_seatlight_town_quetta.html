@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr Mudassir Dental Clinic Quetta Satellite Town</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif;}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+/* NAV */
+nav{
+display:flex;
+flex-direction:column;
+align-items:flex-start;
+padding:15px;
+background:#111827;
+font-size:13px;
+gap:5px;
+}
+
+nav a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+/* HERO */
+.hero{
+padding:30px 15px;
+text-align:center;
+}
+
+.hero h1{
+font-size:28px;
+line-height:1.3;
+}
+
+.hero span{color:#38bdf8;}
+
+.hero p{
+margin-top:10px;
+color:#ccc;
+font-size:14px;
+}
+
+.hero button{
+margin-top:15px;
+padding:10px 20px;
+border:none;
+background:#38bdf8;
+color:black;
+border-radius:25px;
+}
+
+.hero img{
+width:100%;
+margin-top:20px;
+border-radius:15px;
+}
+
+/* SERVICES */
+.services{
+padding:30px 15px;
+}
+
+.services h2{
+margin-bottom:15px;
+font-size:20px;
+}
+
+.card{
+background:#08339185;
+padding:15px;
+margin-bottom:15px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.02);
+}
+
+/* TESTIMONIAL */
+.testimonial{
+padding:30px 15px;
+background:#020617;
+}
+
+.review{
+background:#111827;
+padding:15px;
+margin-bottom:10px;
+border-radius:10px;
+font-size:14px;
+}
+
+/* FORM */
+.form{
+padding:30px 15px;
+text-align:center;
+}
+
+input{
+width:100%;
+padding:12px;
+margin:8px 0;
+border:none;
+border-radius:5px;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#38bdf8;
+border:none;
+border-radius:25px;
+margin-top:10px;
+}
+
+/* FLOAT WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+font-size:20px;
+}
+
+/* DESKTOP */
+@media(min-width:768px){
+
+nav{
+flex-direction:row;
+justify-content:space-between;
+align-items:center;
+}
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+text-align:left;
+padding:60px;
+}
+
+.hero-text{max-width:50%;}
+
+.hero img{width:400px;}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+}
+.location{
+padding:30px 15px;
+text-align:center;
+background:#020617;
+}
+
+.location h2{
+margin-bottom:10px;
+}
+
+.map{
+margin-top:15px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>Dr Mudassir Dental Clinic & Implant</h2>
+
+<div>
+👨‍⚕️ Dr.Habib: 
+<a href="https://wa.me/923173817788?text=Hello Doctor I want appointment" target="_blank">
++92 317 3817788
+</a>
+</div>
+
+<div>
+🧑‍💼 Shahbaz Assistant : 
+<a href="https://wa.me/923151235064?text=Hello I want appointment" target="_blank">
++92 315 1235064
+</a>
+</div>
+
+</nav>
+
+<div class="hero">
+
+<div class="hero-text">
+<h1>Premium Dental Care 😁</h1>
+<p>Pain-Free Treatment | Lifetime Guarantee</p>
+<button onclick="scrollToForm()">Book Appointment</button>
+</div>
+
+<div class="hero-img">
+<img src="https://image2url.com/r2/default/images/1774646716716-3682f839-c587-4468-8ccb-d5ce244585ea.png">
+
+<div class="overlay">
+<h2>Pain-Free Procedures</h2>
+<p>Lifetime Guarantee on Crowns & Implants</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- SERVICES -->
+<div class="services">
+<h2>Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Whitening</h3>
+<p>Bright smile</p>
+<b>PKR 35,000</b>
+</div>
+
+<div class="card">
+<h3>Braces</h3>
+<p>Perfect alignment</p>
+<b>PKR 100,000 to 300,000</b>
+</div>
+
+<div class="card">
+<h3>Implants</h3>
+<p>Permanent solution</p>
+<b>PKR 70,000</b>
+</div>
+
+<div class="card">
+<h3>Scaling</h3>
+<p>Deep cleaning</p>
+<b>PKR 8,000</b>
+</div>
+
+<div class="card">
+<h3>RCT</h3>
+<p>pain free</p>
+<b>PKR 8,000</b>
+</div>
+
+</div>
+</div>
+
+<!-- TESTIMONIAL -->
+<div class="testimonial">
+<h2>Patient Reviews</h2>
+
+<div class="review">"Best clinic, very professional! pain free procedure" - Ahmed</div>
+<div class="review">"Amazing Results atfer teeth whitening 😍" - sadia</div>
+<div class="review">"Highly recommended" - Usman</div>
+
+</div>
+
+<!-- LOCATION SECTION -->
+<div class="location">
+
+<h2>📍 Our Location</h2>
+
+<p>Dr Mudassir Dental Clinic, Satellite Town, Quetta</p>
+
+<!-- GOOGLE MAP EMBED -->
+<div class="map">
+<iframe 
+src="https://maps.google.com/maps?q=Satellite%20Town%20Quetta&t=&z=15&ie=UTF8&iwloc=&output=embed"
+frameborder="0"
+style="width:100%; height:250px; border-radius:10px;"
+allowfullscreen>
+</iframe>
+</div>
+
+<!-- OPEN IN GOOGLE MAP BUTTON -->
+<a href="https://www.google.com/maps?q=Satellite+Town+Quetta" target="_blank">
+<button style="margin-top:10px;">Open in Google Maps</button>
+</a>
+
+</div>
+
+<!-- FORM -->
+<div class="form" id="form">
+
+<h2>Book Appointment</h2>
+
+<input type="text" id="name" placeholder="Your Name">
+<input type="text" id="phone" placeholder="Phone Number">
+<input type="date" id="date">
+
+<button onclick="book()">Submit</button>
+
+<p id="msg"></p>
+
+</div>
+
+<!-- FLOAT BUTTON -->
+<a href="https://wa.me/923173817788?text=Hello I want appointment" target="_blank" class="whatsapp">
+💬
+</a>
+
+<script>
+
+function scrollToForm(){
+document.getElementById('form').scrollIntoView({behavior:'smooth'});
+}
+
+function book(){
+
+let name=document.getElementById('name').value;
+let phone=document.getElementById('phone').value;
+let date=document.getElementById('date').value;
+
+if(name && phone && date){
+
+document.getElementById('msg').innerHTML="✅ Submitted";
+
+// FIXED WhatsApp URL
+let url = `https://wa.me/923173817788?text=New Appointment:%0AName:${name}%0APhone:${phone}%0ADate:${date}`;
+
+window.open(url, "_blank");
+
+}else{
+document.getElementById('msg').innerHTML="⚠️ Fill all fields";
+}
+
+}
+
+</script>
+
+</body>
+</html>
